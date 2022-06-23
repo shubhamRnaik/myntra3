@@ -1,0 +1,498 @@
+:root{
+    --primary-color:#282c3f;
+
+    --pink:#ff3f6c;
+
+    --sprite:url(../assets/MyntraWebSprite.png);
+
+    --grey_background:rgba(245,245,246,0.5);
+}
+
+
+
+.navbar{
+
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 12px 0 rgb(0 0 0 / 5%);}
+
+.navContainer{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    
+}
+
+.navContainer> :is(.leftSide,.RightSide ){
+    display: flex;
+    flex-basis: 50%;
+    height: inherit;
+    align-items: center;
+}
+
+
+.navContainer>.RightSide{
+
+}
+.navContainer>.leftSide>.left_left{
+    flex-basis: 15%;
+}
+.navContainer>.leftSide>.left_Right{
+    width: 85%;
+    display: flex;
+    padding: 22px 0 0 0;
+}
+
+.navContainer>.RightSide>.right_left{
+    width: 70%;
+}
+.navContainer>.RightSide>.right_Right{
+    flex-basis: 30%;
+}
+
+
+.navContainer>.leftSide>.left_left>a{
+    background: url('../assets/MyntraWebSprite.png');
+    display: inline-block;
+    vertical-align: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-size: 1404px 105px;
+    width: 50px;
+    height: 36px;
+    background-position: -462px 0;
+}
+
+.left_Right>{
+    padding-bottom: 10px;
+    text-align: center;
+    height: inherit;
+}
+.left_Right>ul{
+    list-style: none;
+    display: flex;
+    padding-bottom: 20px;
+align-items: center;  
+justify-content: center; 
+ height: inherit;
+    width: 100%;
+    padding-left: 10px;
+    z-index: 999;
+   
+}
+
+.left_Right>ul>li{
+    font-size: 12px;
+    font-weight: 600;
+    color: #282c3f;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    padding-right: 29px;
+    padding-top: 12px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: inherit;
+    display: inline-block;
+}
+
+.left_Right>ul>li:hover{
+    border-bottom: 2px solid var(--pink);
+
+}
+
+.right_left>div>.SearchIcon{
+    background-image: url(../assets/MyntraWebSprite.png);
+    height: 31px;
+    width: 21px;
+    display: inline-block;
+    background-size: 1403px 105px;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0%;
+    background-position: -753px 110px;
+
+}
+
+
+.right_left>div>span>a{
+    text-decoration: none;
+    background-color: #282c3f ;
+}
+.right_left>div>span>a>input{
+
+    border: none;
+    height: 33px;
+    width: 262px;
+    text-align: center;
+    
+
+}
+
+.right_left>div>span>a>input:focus{
+    border: none;
+    text-decoration: none;
+
+}
+
+.right_Right>ul{
+    list-style: none;
+    display: flex;
+justify-content: space-around;
+height: 22px;
+}
+
+.right_Right>ul>li>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.right_Right>ul>li{
+
+}
+
+.ProfileLogo{
+
+    background-image: url(../assets/MyntraWebSprite.png);
+    height: 35px;
+    background-position: -756px 113px;
+    width: 15px;
+    display: inline-block;
+    background-size: 1305px 100px;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0%;
+}
+
+
+.WishlistLogo{
+    background: url(https://constant.myntassets.com/web/assets/img/MyntraWebSprite_27_01_2021.png);
+    height: 34px;
+    background-position: -315px -187px;
+width: 18px;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0%;
+margin-top: 2px;
+
+    background-size: 1404px 110px;
+    display: inline-block;
+    }
+
+.BagLogo{
+   
+    height: 34px;
+    background-position: -138px 113px;
+    width: 18px;
+    display: inline-block;
+    background-size: 1341px 109px;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0%;
+margin-top: 2px;
+ background-image: url(../assets/MyntraWebSprite.png);
+    
+}
+
+.right_Right>ul>li>div>span:last-child{
+    font-size: 12px;
+    color: #282c3f;
+}
+
+.dropDown{
+    height: 290px;
+    width: 250px;
+background-color: #fff;
+    position: absolute;
+    right: -110px;
+    top: 68px;
+    z-index: 2;
+
+}
+
+.dropDown{
+    
+
+}
+
+.Profile{
+    position: relative;
+}
+
+.dropDown_Wrapper{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 15px;
+color: #282c3f;
+font-size: 14px;
+gap: 10px;
+
+
+
+}
+
+
+
+
+.dropDown_Wrapper>header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.dropDown_Wrapper>header>h1{
+    width: 100%;
+    text-align: start;
+}
+
+.Topline{
+    display: block;
+    top: -2px;
+    position: absolute;
+    width: 59px;
+    border-bottom: 4px solid #f16565;
+    left: 90px;
+}
+
+
+.supNew{
+    color: var(--pink);
+    font-weight: 800;
+}
+
+
+.dropDown_Wrapper>header>p{
+    font-weight: 400;
+    font-size: 12px;
+    color: #282c3f;
+}
+
+
+.dropDown_Wrapper>header>a{
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 0 0 5px;
+}
+
+.dropDown_Wrapper>header>a>button{
+    height: 30px;
+    width: 100px;
+    color: var(--pink);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.623);
+}
+
+
+.dropDown_Wrapper>header>a>button:hover{
+    border: 1px solid var(--pink)
+
+}
+
+
+.dropDown_Wrapper>main>ul{
+    list-style: none;
+}
+
+.dropDown_Wrapper>footer>ul{
+    list-style: none;
+
+}
+
+
+.dropDown_Wrapper>main>ul>li{
+    color: #282c3fd5;
+    font-size: 13PX;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.dropDown_Wrapper>footer>ul>li{
+    color: #282c3fd5;
+    font-size: 13PX;
+    font-weight: 300;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+
+.SecondNew{
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    background-color: var(--pink);
+    height: 15px ;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 11PX;
+}
+
+.dropDown{
+    display: none;
+    /* opacity: 0; */
+}
+
+
+.Profile:hover .dropDown{
+    display: block;
+}
+    /*  ignore this  */
+.men_List{
+    position: relative;
+}
+
+#megaMenu{
+    position: absolute;
+    height: 60vh;
+    min-width: 874px;
+    max-width: 874px;
+    top: 57px;
+background-color: rgb(245, 237, 237);
+visibility: hidden;
+opacity: 0;
+
+}
+
+.men_List:hover >#megaMenu{
+    visibility: visible;
+opacity: 1;
+}
+
+
+#megaMenu>section{
+    display: flex;
+    height: inherit;
+}
+
+#megaMenu>section>aside{
+    flex: 1;
+
+}
+#megaMenu>section>aside:nth-child(odd){
+    background-color: #fff;
+}
+
+#megaMenu>section>aside:nth-child(even){
+    background-color: var(--grey_background)
+}
+
+
+.lists>ul{
+    list-style: none;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: start;
+}
+
+
+
+.lists>ul>li>a{
+    text-decoration: none;
+    color: #282c3f;
+    font-weight: 500;
+    font-size: 11px;
+
+}
+
+.lists>ul>li:first-child a{
+    color: var(--pink);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+.topSpace{
+   padding-bottom: 10px;
+   border-bottom: 1px solid rgba(128, 128, 128, 0.671);
+    
+}
+
+.colorbottom{
+    padding-top: 10px;
+    color: var(--pink);
+    font-size: 12px;
+    font-weight: 500;
+    
+}
+
+.colorbottom>a{
+    color: #f16565;
+}
+
+
+/*  slider section  */
+
+#sliderBlock{
+    width: 100%;
+    height: 50vh;
+    padding-top: 40px;
+}
+
+#sliderBlock>article{
+    height: inherit;
+    width: inherit;
+}
+
+#sliderBlock>article>figure{
+    display: flex;
+    height: inherit;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    gap: 120px;
+    /* transform: translate3d(-4496.67px, 0px, 0px); */
+    animation: 10s slider 3s;
+    animation-iteration-count: infinite; 
+    /* animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out 5s all; */
+
+}
+
+#sliderBlock>article>figure>img{
+    width: 100%;
+    height: 50vh;
+    object-fit: contain;
+    position: relative;
+}
+
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+
+    50%{
+        left: -200%;
+    }
+
+    75%{
+        left: -300%;
+    }
+
+    100%{
+        left: -400%;
+
+    }
+}

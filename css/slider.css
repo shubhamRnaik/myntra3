@@ -1,0 +1,85 @@
+.slider {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.imgs_slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+    
+}
+
+/* We have to set display: none;
+  If not, all of our images would 
+  be visible at the same time */
+.imgs_slides input {
+    display: none;
+}
+
+.slide {
+    width: 100%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 100%;
+    height: 50vh;
+}
+
+/* css for slide navigation */
+.navigation {
+    position: absolute;
+    width: 400px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    top: 350px;
+    left: 392px;
+}
+
+.navigation-btn {
+    border: 2px solid #de6a23;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navigation-btn:hover {
+    background: #de6a23;
+}
+
+.first>img{
+    width: 100%;
+    object-fit: contain;
+}
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -53%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+#radio5:checked~.first {
+    margin-left: -89%;
+}
+/* <link rel="stylesheet" type="text/css" 
+    href="styles.css" /> */
